@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
-const Connection = async (username, password) => {
-    const URL = `mongodb+srv://pradnyeshjain:<Pradnyesh2711>@cluster0.tkkyolo.mongodb.net/?retryWrites=true&w=majority`;
+const Connection = async () => {
+    const URL = `mmongodb+srv://pradnyeshjain:Pradnyesh2711@cluster0.tkkyolo.mongodb.net/?retryWrites=true&w=majority`;
     try {
         await mongoose.connect(URL, { useUnifiedTopology: true, useNewUrlParser: true, useFindAndModify: false });
         console.log('Database Connected Succesfully');
